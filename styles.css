@@ -30,7 +30,10 @@ footer {
 	flex-shrink: 0;
 }
 
-
+@media screen and (max-width: 300px) {
+	display: flex;
+	flex-direction: column;
+}
   
 #logo {
     margin: 5px 15px 5px 20px;
