@@ -1,187 +1,253 @@
 body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-html, body {
-  height: 100%;
-}
-
-.content {
-  flex: 1 0 auto;
-}
-
-.main { 
-    display: flex; 
-	justify-content: space-between;
-  }
-
-hr {
-	width:100%
-}
-
-footer {
-	text-align: center;
-	color: gray;
-	font-size: 14px;
-	margin: 10px 15px 15px 10px;
-	padding: 10px;
-	flex-shrink: 0;
-}
-
-@media screen and (max-width: 300px) {
+	background-color: white;
 	display: flex;
 	flex-direction: column;
-}
+  }
   
-#logo {
-    margin: 5px 15px 5px 20px;
-	padding: 15px;
-	border-radius: 5em;
-	color: green;
-	background-color: lightgreen;
-	text-decoration: none;
-	font-family: sans-serif;
-	font-size: 14px;
-	text-align: center;
-}
-
-.menubar {
-	display: flex;
-	flex: 0 1;
-	margin: 25px 20px 5px 10px;
-	text-decoration: uppercase;
+  html, body {
+	height: 100%;
+  }
+  
+  .content {
+	flex: 1 0 auto;
+  }
+  
+  .main { 
+	  display: flex; 
+	  justify-content: space-between;
 	}
-
-.menu-item {
-	margin: 0px 5px 0px 5px;
-	font-family: Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-}
-
-.search {
-	display: flex;
-	border: 2px solid lightgray;
-	border-radius: 15px;
-	padding: 0px 0px 0px 10px;
-}
-
-.searchbox {
-	border: 2px solid blue;
-	flex: 0 1 calc(32% - 1em)
-}
-
-.typeSomethingBox {
-	border: 2px solid blue;
-	flex: 0 1 calc(32% - 1em)
-}
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
- 
-    .card {
-        flex: 0 1 calc(100%);
-		border-radius: 5px;
-		border: 2px solid red;
-		margin: 1em;
-		padding: 1em;
-		text-align: center;
-		justify-content: space-between;
-    }
-}
-
-.card:hover {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-@media screen and (min-width: 40em) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
- 
-    .card {
-        flex: 0 1 calc(40% - 1em);
-		border-radius: 5px;
-		border: 2px solid aqua;
-		margin: 1em;
-		padding: 1em;
-		text-align: center;
-    }
-}
-
-@media screen and (min-width: 52em) {
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
- 
-    .card {
-        flex: 0 1 calc(40% - 1em);
-	    border-radius: 5px;
-		border: 2px solid brown;
-		margin: 1em;
-		padding: 1em;
-		text-align: center;
-    }
-}
-
-@media screen and (min-width: 60em) {
-	.cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+  
+  hr {
+	  width:100%
+  }
+  
+  footer {
+	  text-align: center;
+	  color: gray;
+	  font-size: 14px;
+	  margin: 10px 15px 15px 10px;
+	  padding: 10px;
+	  flex-shrink: 0;
+  }
+  
+  
 	
-    .card {
-        flex: 0 1 calc(18% - 1em);
-		border-radius: 5px;
-		border: 2px solid #73AD21;
-		margin: 1em;
-		padding: 1em;
-		text-align: center;
-    }
-}
-
-.p1 {
-  font-family: "Palatino", Times, serif;
-}
-
-.p2 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-
-.p4 {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.p5 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.p6 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-
-.p7 {
-  font-family: "Times New Roman", Times, serif;
-}
-
-.p8 {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.p9 {
-  font-family: "Lucida Console", "Courier New", monospace;
-}
-
+  #logo {
+	  margin: 5px 15px 5px 20px;
+	  padding: 15px;
+	  border-radius: 5em;
+	  color: green;
+	  background-color: lightgreen;
+	  text-decoration: none;
+	  font-family: sans-serif;
+	  font-size: 14px;
+	  text-align: center;
+  }
+  
+  .menubar {
+	  display: flex;
+	  flex: 0 1;
+	  margin: 25px 20px 5px 10px;
+	  text-decoration: uppercase;
+	  }
+  
+  .menu-item {
+	  margin: 0px 5px 0px 5px;
+	  font-family: Arial, Helvetica, sans-serif;
+	  text-transform: uppercase;
+  }
+  
+  .search {
+	  display: flex;
+	  border: 2px solid lightgray;
+	  border-radius: 15px;
+	  padding: 0px 0px 0px 10px;
+  }
+  
+  .searchbox {
+	  border: 2px solid blue;
+	  flex: 0 1 calc(32% - 1em)
+  }
+  
+  .typeSomethingBox {
+	  border: 2px solid blue;
+	  flex: 0 1 calc(32% - 1em)
+  }
+  
+  .typeText {
+	  
+  }
+  
+  .typeText::after {
+	content: "|";
+	animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0;}
+  }
+  
+	  .cards {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+	  }
+   
+	  .card {
+		  flex: 0 1 calc(100%);
+		  border-radius: 5px;
+		  border: 2px solid red;
+		  margin: 1em;
+		  padding: 1em;
+		  text-align: center;
+		  justify-content: space-between;
+	  }
+  }
+  
+  .cardText {
+	  color: yellow;
+  }
+  
+  .blueBackground {
+	  background-color: lightblue;
+  }
+  
+  .pinkBackground {
+	  background-color: pink;
+  }
+  
+  .cardText1 {
+	  
+  }
+  
+  .cardText2 {
+	  
+  }
+  
+  .cardText3 {
+	  
+  }
+  
+  .cardText4 {
+	  
+  }
+  
+  .cardText5 {
+	  
+  }
+  
+  .cardText6 {
+	  
+  }
+  
+  .cardText7 {
+	  
+  }
+  
+  .cardText8 {
+	  
+  }
+  
+  .cardText9 {
+	  
+  }
+  
+  @media screen and (max-width: 240px) {
+	  display: flex;
+	  flex-direction: column;
+  }
+  
+  @media screen and (min-width: 40em) {
+	  .cards {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+	  }
+   
+	  .card {
+		  flex: 0 1 calc(40% - 1em);
+		  border-radius: 5px;
+		  border: 2px solid aqua;
+		  margin: 1em;
+		  padding: 1em;
+		  text-align: center;
+	  }
+  }
+  
+  @media screen and (min-width: 52em) {
+	  .cards {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+	  }
+   
+	  .card {
+		  flex: 0 1 calc(40% - 1em);
+		  border-radius: 5px;
+		  border: 2px solid brown;
+		  margin: 1em;
+		  padding: 1em;
+		  text-align: center;
+	  }
+  }
+  
+  @media screen and (min-width: 60em) {
+	  .cards {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: flex-start;
+	  }
+	  
+	  .card {
+		  flex: 0 1 calc(18% - 1em);
+		  border-radius: 5px;
+		  border: 2px solid #73AD21;
+		  margin: 1em;
+		  padding: 1em;
+		  text-align: center;
+	  }
+	  
+  }
+  
+  .card:hover {
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  }
+  
+  .p1 {
+	font-family: "Palatino", Times, serif;
+  }
+  
+  .p2 {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p3 {
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .p4 {
+	font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p5 {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p6 {
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  .p7 {
+	font-family: "Times New Roman", Times, serif;
+  }
+  
+  .p8 {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .p9 {
+	font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
+  
